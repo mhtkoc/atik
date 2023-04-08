@@ -1,0 +1,54 @@
+body{
+    font-family: sans-serif;
+    overflow: hidden;
+    background:azure;
+}
+#gradient {
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , black);
+}
+
+.scene,
+canvas{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+}
+
+.text-center {
+  text-align: center !important;
+  font-size: 32px;
+  padding: 20px;
+}
+
+.footer{
+    font-size: 15px;
+}
+
+.text-w{
+color: white;
+}
+.text-b{
+color: black;
+}
+
+.container{
+    height: 70%;
+    width: 100%;
+}
+
+
+.center {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  
+}
+
+.scenev2,
+canvas{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: white;
+}

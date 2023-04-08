@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>GTÜ ATİK</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- jquery and js code for html include-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.min.css"
+        integrity="sha256-ZZ3OsjPm41KzoIhJj6bh+MPNLkTNoY4BJq77ll4X+Mc=" crossorigin="anonymous">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="navbarContent">
+
+    </header>
+    <!-- content -->
+    <section class="mt-5 mb-5">
+        <div class="container ">
+            <div class=" bg-white   align-content-center p-lg-5">
+
+
+                <div class="w-75 mx-auto ">
+                    <div class="text-center mb-5 pt-3 bg-light">
+                        <h2 class="heading-section">İletişim Formu</h2>
+                    </div>
+                    <!--https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/viewform?usp=pp_url&entry.1121865163=defaultName&entry.85523279=defaultMail&entry.1648347375=subject&entry.302648110=message-->
+                    <form name="gform" id="gform" enctype="text/plain"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLSeOaZohEAT_j-F_WQ8Ue1eGm-tT-PrTiF-7Y5S5Ww3kyf2yqw/formResponse?"
+                        target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="p-1">
+                            <div class="px-lg-5 w-100 mx-auto">
+                                Adınız:<br>
+                                <input type="text" name="entry.1121865163" id="entry.1121865163" placeholder="Adınız"
+                                    class="form-control">
+                            </div>
+                            <div class="px-lg-5 w-100 mx-auto">
+                                Mail Adresiniz:<br>
+                                <input type="email" name="entry.85523279" id="entry.85523279"
+                                    placeholder="Mail Adresiniz" class="form-control">
+                            </div>
+                            <div class="px-lg-5 w-100 mx-auto">
+                                Konu:<br>
+                                <input type="text" name="entry.1648347375" id="entry.1648347375" placeholder="Konu"
+                                    class="form-control">
+                            </div>
+                            <div class="px-lg-5 w-100 mx-auto">
+                                Mesaj:<br>
+                                <textarea type="text" name="entry.302648110" id="entry.302648110" placeholder="Mesaj"
+                                    class="form-control" maxlength="300"></textarea>
+                            </div>
+                            <div class="px-lg-5">
+                                <input type="submit" value="Gönder">
+                            </div>
+                        </div>
+                    </form>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted) {}"></iframe>
+                </div>
+                <div class="w-75 mx-auto">
+                    <div class="text-center mb-5 mt-3 bg-light">
+                        <h2 class="heading-section">Diğer Bilgiler...</h2>
+                    </div>
+                    <div class="   img mx-auto">
+
+                        <p class="pb-3"><i class="fas fa-paper-plane"></i><span> Mail:</span> <a
+                                href="mailto:gtuatik@gmail.com">gtuatik@gmail.com</a>
+                        </p>
+                        <p><i class="fas fa-map-marker"></i><span> Adres:</span> Gebze Teknik
+                            Üniversitesi Gebze/Kocaeli
+                        </p><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4332.938850552715!2d29.356617718659525!3d40.80764911892537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cade56af489127%3A0x28e488940d24037f!2sGebze%20Teknik%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1645835085984!5m2!1str!2str"
+                            width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /content -->
+    <div id="footerContent"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script type="text/javascript">var submitted = false;</script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function (e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Mesajınız başarıyla gönderildi...');
+        });
+    </script>
+</body>
+
+</html>
