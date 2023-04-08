@@ -1,2 +1,2 @@
-# ar-getit.github.io
+# Gtu Atik
 statik web sitesi 
