@@ -1,66 +1,69 @@
-
-nav #logo img{
-    width: 50px;
+nav #logo img {
+  width: 50px;
 }
 
- .fiftyfifty{
-    width: 50%;
-    align-content:center;
+.fiftyfifty {
+  width: 50%;
+  align-content: center;
 }
 
-.fs16{
+.fs16 {
   font-size: 16pt;
 }
+
 @font-face {
   font-family: 'Lobster';
   font-display: swap;
-  src: url(/assets/Fonts/Lobster-Regular.ttf) ;
+  src: url(./assets/Fonts/Lobster-Regular.ttf);
 }
+
 @font-face {
   font-family: 'Montserrat';
   font-display: swap;
-  src: url(/assets/Fonts/Montserrat-Regular.ttf) ;
+  src: url(./assets/Fonts/Montserrat-Regular.ttf);
 }
-body{
+
+body {
   font-family: 'Montserrat';
 }
 
-.fsBig{
+.fsBig {
   font-size: 30px;
   font-family: 'Lobster';
 }
 
-.text-right{
+.text-right {
   text-align: end;
 }
 
-.Instagram:hover{
- color:crimson;
+.Instagram:hover {
+  color: crimson;
 }
 
-.Linkedin:hover{
- color: #fff;
+.Linkedin:hover {
+  color: #fff;
 }
 
-@keyframes transitionIn{
-  from{
+@keyframes transitionIn {
+  from {
     opacity: 0;
     transform: rotateX(-15deg);
-   /* transform: rotateY(-10px); */ 
+    /* transform: rotateY(-10px); */
   }
-  to{
+
+  to {
     opacity: 3;
     transform: rotateX(0);
-    
-   /* transform: rotateY(0); */ 
+
+    /* transform: rotateY(0); */
 
   }
 }
 
 
 body {
-/*  background-image:  url("../assets/img/bg.webp"); */
-background-color: #fff;
+  /*  background-image:  url("../assets/img/bg.webp"); */
+  background-color: #fff;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -75,74 +78,74 @@ p {
   background-color: #f8f9fa9f;
 }
 
-.image{
+.image {
   width: 70%;
   margin: auto;
 }
 
 ul.social-network {
-    list-style: none;
-    display: inline;
-    margin-left: 0 !important;
-    padding: 0;
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
 }
 
 ul.social-network li {
-    display: inline;
-    margin: 0 5px;
+  display: inline;
+  margin: 0 5px;
 }
 
 .social-network a.icoInstagram:hover {
-    background-color: #c94534;
+  background-color: #c94534;
 }
 
 .social-network a.icoLinkedin:hover {
-    background-color: #007bb7;
+  background-color: #007bb7;
 }
 
 .social-network a.icoInstagram:hover i,
 .social-network a.icoLinkedin:hover i {
-    color: #fff;
+  color: #fff;
 }
 
 
 .social-circle li a {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto 0 auto;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
 }
 
 .social-circle li i {
-    margin: 0px;
-    line-height: 30px;
-    text-align: center;
+  margin: 0px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .social-circle li a:hover i,
 .triggeredHover {
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -ms--transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-    transition: all 0.2s;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .social-circle i {
-    color: rgb(27, 124, 214);
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    -ms-transition: all 0.8s;
-    transition: all 0.8s;
+  color: rgb(27, 124, 214);
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
 }
